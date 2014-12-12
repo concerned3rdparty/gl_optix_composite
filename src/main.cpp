@@ -299,7 +299,7 @@ void AppWindow::motion ( int x, int y )
 bool AppWindow::init ()
 {
 	// Get comnmand line
-	std::string str = "";  //cmdline;
+	std::string str = getCmdLine();
 	if ( str == "" )
 		str = "-i lucy.scn -s 8";
 

@@ -94,6 +94,9 @@
     #define snprintf _snprintf
 #endif
 
+#include <windows.h>
+extern LPSTR g_lpCmdLine;
+
 //----------------- to be declared in the code of the sample: so the sample can decide how to display messages
 class NVPWindow
 {
@@ -335,6 +338,7 @@ public:
   inline void         setCurMouse(int x, int y) { m_curX = x; m_curY = y; }
   inline int          getCurX() { return m_curX; }
   inline int          getCurY() { return m_curY; }
+  inline char*		  getCmdLine ()  { return g_lpCmdLine; }
 
 
   // activate and deactivate are not thread-safe, need to be wrapped in mutex if called from multiple threads
