@@ -29,7 +29,7 @@ Higher quality hard shadows are achieved by multi-sampling the shadow rays withi
 ![sample screenshot](https://github.com/nvpro-samples/gl_optix_composite/blob/master/docs/optix_shadow1x.png)
 ![sample screenshot](https://github.com/nvpro-samples/gl_optix_composite/blob/master/docs/optix_shadow8x.png)
 
-These images compare 1 spp and 8 spp hard shadows. By increasing the number of shadow rays, we can achieve high quality interactive hard shadows. While this requires 8x more rays, many of these will be close together and OptiX will utilizes this spatial coherency.
+These images compare 1 spp and 8 spp hard shadows. By increasing the number of shadow rays, we can achieve high quality interactive hard shadows. While this requires 8x more rays, many of these will be close together and OptiX will utilize the spatial coherency.
 
 ![sample screenshot](https://github.com/nvpro-samples/gl_optix_composite/blob/master/docs/optix_composite2.jpg)
 
@@ -37,6 +37,9 @@ To generate multiple shadow rays, these rays must be contained within a single p
 
 #### Requirements
 
+Requirements:<br>
+- Visual Studio 2010/2012<br>
+- CUDA 5.5 Toolkit<br>
 To run this sample, you must install the CUDA 5.5 Toolkit. https://developer.nvidia.com/cuda-toolkit-55-archive
  (Other versions of CUDA are not yet supported).
 OptiX 3.6.3 is also required, but this library is already included in the shared_external sources, so no additional libraries are needed aside from CUDA 5.5.
@@ -60,7 +63,9 @@ Quick build instructions:
   - Click Generate
 
 4) Open the nvpro_samples.sln into Visual Studio 2010, and Build All!
+
 5) Select the gl_ optix_composite samples as the Startup project (right click on project, select Set as StartUp Project)
+
 6) Click Run!
 
 
