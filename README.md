@@ -42,7 +42,7 @@ Requirements:<br>
 - CUDA 5.5 Toolkit<br>
 To run this sample, you must install the CUDA 5.5 Toolkit. https://developer.nvidia.com/cuda-toolkit-55-archive
  (Other versions of CUDA are not yet supported).
-OptiX 3.6.3 is also required, but this library is already included in the shared_external sources, so no additional libraries are needed aside from CUDA 5.5.
+- OptiX 3.6.3 SDK is needed from the shared_optix repo, so no external libraries are needed aside from CUDA 5.5.
 
 #### How to Build & Run
 
@@ -50,7 +50,7 @@ Quick build instructions:
 
 1) Clone the following NVPro-samples repositories:
   - //github.com/nvpro-samples/build_all.git
-  - //github.com/nvpro-samples/shared_external.git
+  - //github.com/nvpro-samples/shared_optix.git
   - //github.com/nvpro-samples/shared_sources.git
   - //github.com/nvpro-samples/gl_optix_composite.git
 
